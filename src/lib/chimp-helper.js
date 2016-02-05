@@ -1,5 +1,6 @@
 var chai            = require('chai'),
     chaiAsPromised  = require('chai-as-promised'),
+    spies           = require("chai-spies"),
     log             = require('./log'),
     DDP             = require('./ddp'),
     request         = require('request'),
@@ -19,6 +20,7 @@ var chimpHelper = {
     if (process.env['chimp.chai']) {
       log.debug('[chimp][helper] Using the chai-expect assertion library');
       chai.use(chaiAsPromised);
+      chai.use(spies);
       chai.should();
       // give users access to the chai instance
       global.chai = chai;

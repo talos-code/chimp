@@ -61,6 +61,7 @@
     "bluebird": "^2.9.33",
     "chai": "~3.0.0",
     "chai-as-promised": "~5.1.0",
+    "chai-spies": "^0.7.1",
     "child-process-debug": "0.0.7",
     "chimp-widgets": "0.2.0",
     "chokidar": "~1.0.6",
